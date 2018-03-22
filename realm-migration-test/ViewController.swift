@@ -27,9 +27,8 @@ class ViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
 
         print(credentials.seed)
-//        print(credentials.socketUUID)
-//        print(credentials.hasCompletedLegalAgreements)
-//        print(credentials.moon)
+        print(credentials.socketUUID)
+        print(credentials.hasCompletedLegalAgreements)
     }
 
     required init?(coder aDecoder: NSCoder) {

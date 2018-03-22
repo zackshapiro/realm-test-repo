@@ -13,16 +13,16 @@ import RealmSwift
 
 final class Credentials: Object {
 
-//    @objc dynamic var id: String = "0"
+    @objc dynamic var id: String = "0"
     @objc dynamic var seed: String = ""
     @objc dynamic var privateKey: Data = Data()
 
-//    @objc dynamic var hasCompletedLegalAgreements: Bool = false
-//    @objc dynamic var socketUUID: String?
+    @objc dynamic var hasCompletedLegalAgreements: Bool = false
+    @objc dynamic var socketUUID: String?
 
-//    override class func primaryKey() -> String? {
-//        return "id"
-//    }
+    override class func primaryKey() -> String? {
+        return "id"
+    }
 
     convenience init?(seedString seed: String) {
 

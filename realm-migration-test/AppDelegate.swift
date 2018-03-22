@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-//        RealmMigration.migrate()
-//        let _ = try! Realm()
+        RealmMigration.migrate()
+        let _ = try! Realm()
 
         // first, just store the value in realm
-        UserService().store(credentials: Credentials(seedString: "foobar")!)
+//        UserService().store(credentials: Credentials(seedString: "foobar")!)
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
